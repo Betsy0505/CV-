@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/Recursos/img/background5.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cv-header {
+    text-align: center;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 10px;
+}
+
+.cv-header .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+.sidebar {
+    background: #ecf0f1;
+    padding: 20px;
+    border-right: 2px solid #dcdde1;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h3 {
+    color: #2980b9;
+}
+
+.main-content ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 2px solid #dcdde1;
+    }
+}
